@@ -27,7 +27,6 @@ server.get('/auth', (req, res) => {
 
 
 
-
 server.listen(PORT, () => {
   const d = new Date()
   console.log(`${d.toLocaleString()}: Server listening on port ${PORT}`);
