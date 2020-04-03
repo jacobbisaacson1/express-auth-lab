@@ -18,9 +18,12 @@ server.get('/', (req, res) => {
   res.render('home.ejs')
 })
 
+const authController = require('./controllers/authController')
+server.use('/auth', authController)
 
-
-
+server.get('/auth', (req, res) => {
+	res.send('hey sup')
+})
 
 
 
